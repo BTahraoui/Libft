@@ -3,24 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: btahraoui <b.tahraoui.badr#gmail.com>      #+#  +:+       +#+        */
+/*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-01 12:24:11 by btahraoui         #+#    #+#             */
-/*   Updated: 2026-10-01 12:24:11 by btahraoui        ###   ########.fr       */
+/*   Created: 2026/10/13 10:25:39 by batahrao          #+#    #+#             */
+/*   Updated: 2026/10/13 10:28:18 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+int	ft_isprint(int x)
 {
-	if (!(c >= 32 && c <= 126))
-		return (0);
-	return (1);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    printf("%d, ", ft_isprint('\t'));
-    return (0);
+	if ((x >= 0 && x <= 31) || x == 127)
+		return (1);
+	return (0);
 }

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: btahraoui <b.tahraoui.badr#gmail.com>      #+#  +:+       +#+        */
+/*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-01 11:36:09 by btahraoui         #+#    #+#             */
-/*   Updated: 2026-10-01 11:36:09 by btahraoui        ###   ########.fr       */
+/*   Created: 2026/10/12 15:38:44 by batahrao          #+#    #+#             */
+/*   Updated: 2026/10/13 13:08:34 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) // you could pass ascii value instead of 'a' etc.
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }

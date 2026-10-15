@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: btahraoui <b.tahraoui.badr#gmail.com>      #+#  +:+       +#+        */
+/*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-01 12:12:46 by btahraoui         #+#    #+#             */
-/*   Updated: 2026-10-01 12:12:46 by btahraoui        ###   ########.fr       */
+/*   Created: 2026/10/12 15:43:09 by batahrao          #+#    #+#             */
+/*   Updated: 2026/10/12 15:44:07 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9') // you could pass ascii value instead of '0' etc.
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

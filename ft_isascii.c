@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: btahraoui <b.tahraoui.badr#gmail.com>      #+#  +:+       +#+        */
+/*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026-10-01 12:49:25 by btahraoui         #+#    #+#             */
-/*   Updated: 2026-10-01 12:49:25 by btahraoui        ###   ########.fr       */
+/*   Created: 2026/10/13 10:13:09 by batahrao          #+#    #+#             */
+/*   Updated: 2026/10/13 10:13:52 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+int ft_isascii(int x)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+    if (x >= 0 && x <= 127)
+        return (1);
+    return (0);
 }
