@@ -8,14 +8,14 @@ ft_memcmp.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o \
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 %.o : %.c
-	cc -Wall -Wextra -Werror -c $< -o $@
+	@cc -Wall -Wextra -Werror -c $< -o $@
 
 clean :
-	rm -f *.o
+	@rm -f *.o
 fclean : clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 re : fclean all
 
 .PHONY : all clean fclean re

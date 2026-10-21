@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
     }
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
 int	main(int argc, char const *argv[])
 {
@@ -50,3 +50,4 @@ int	main(int argc, char const *argv[])
         printf("%s\n", ptr);
 	return (0);
 }
+*/
