@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:50 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/15 16:38:23 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:43:01 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char *c1;
-	unsigned char *c2;
-	size_t i;
+	unsigned char	*c1;
+	unsigned char	*c2;
+	size_t			i;
 
 	i = 0;
 	c1 = (unsigned char *)s1;

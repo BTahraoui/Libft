@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:50:14 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/16 13:23:03 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:42:26 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,34 +20,34 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (little[i] == '\0')
 		return ((char *)big);
-    
-    while (i < len && big[i])
-    {
-        j = 0;
-        while (i + j < len && big[i + j] && big [i + j] == little[j])
-            j++;
-        if (!little[j])
-            return ((char *)&big[i]);
-        i++;
-    }
+	while (i < len && big[i])
+	{
+		j = 0;
+		while (i + j < len && big[i + j] && big[i + j] == little[j])
+			j++;
+		if (!little[j])
+			return ((char *)&big[i]);
+		i++;
+	}
 	return (NULL);
 }
+
 /*
 #include <stdio.h>
+
 int	main(int argc, char const *argv[])
 {
+	const char	*largestring = "Foo Bar Baz";
+	const char	*smallstring = "Ba";
+	char		*ptr;
+
 	(void)argv;
 	(void)argc;
-    
-	const char *largestring = "Foo Bar Baz";
-    const char *smallstring = "Ba";
-    char *ptr;
-
-    ptr = ft_strnstr(largestring, smallstring, 6);
-    if (ptr == NULL)
-        printf("Not found\n");
-    else
-        printf("%s\n", ptr);
+	ptr = ft_strnstr(largestring, smallstring, 6);
+	if (ptr == NULL)
+		printf("Not found\n");
+	else
+		printf("%s\n", ptr);
 	return (0);
 }
 */

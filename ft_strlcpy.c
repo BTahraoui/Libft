@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 13:11:13 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/14 14:58:28 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:44:20 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t src_len;
-	size_t i;
+	size_t	src_len;
+	size_t	i;
 
 	i = 0;
 	src_len = ft_strlen(src);

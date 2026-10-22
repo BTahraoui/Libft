@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 12:44:49 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/15 12:52:33 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:43:34 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n && s1[i] && s2[i] && s1[i] == s2[i])

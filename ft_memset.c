@@ -6,13 +6,13 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:44:06 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/15 10:16:51 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:44:47 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*clone;
 

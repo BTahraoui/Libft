@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 21:57:58 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/16 22:50:17 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/22 11:42:05 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb == 0 || size == 0)
 		return (ptr = malloc(1));
-	if (size != 0 && nmemb > (size_t)-1 / size) // hundel the overflow
+	if (size != 0 && nmemb > (size_t)-1 / size)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
@@ -28,11 +28,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 }
 
 /*
-#include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-
 int	main(void)
 {
 	int		*arr;
