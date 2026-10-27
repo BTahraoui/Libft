@@ -6,13 +6,13 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:25:39 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:08:21 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 17:03:30 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int x)
+int	ft_isprint(int c)
 {
-	if ((x >= 0 && x <= 31) || x == 127)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:48:15 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/27 16:17:54 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 17:01:10 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
+int		ft_isprint(int x);
 int		ft_isalpha(int c);
 int		ft_isalnum(int x);
 int		ft_isdigit(int c);
