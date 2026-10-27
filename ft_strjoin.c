@@ -6,13 +6,13 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 17:20:44 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/24 17:29:01 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:49:55 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *d, char *s)
+static char	*ft_strcpy(char *d, char *s)
 {
 	size_t	i;
 
@@ -22,7 +22,7 @@ char	*ft_strcpy(char *d, char *s)
 		d[i] = s[i];
 		i++;
 	}
-	d[i] == '\0';
+	d[i] = '\0';
 	return (d);
 }
 
@@ -43,16 +43,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strcpy(copy + s1_len, (char *)s2);
 	return (copy);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char *s1 = "hello";
-	char *s2 = " world";
-	char *p = ft_strjoin(s1, s2);
-	printf("%s\n", p);
-	free(p);
-	p = NULL;
-	return (0);
-}*/

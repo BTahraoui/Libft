@@ -6,13 +6,13 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 22:48:24 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:41:22 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 10:48:58 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*empty_str(void)
+static char	*empty_str(void)
 {
 	char	*ptr;
 
@@ -20,6 +20,7 @@ char	*empty_str(void)
 	if (ptr == NULL)
 		return (NULL);
 	ptr[0] = '\0';
+	return (ptr);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -33,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	source_len = ft_strlen(s);
 	if (start >= source_len)
-		return (empty_str);
+		return (empty_str());
 	substr_len = source_len - start;
 	if (substr_len > len)
 		substr_len = len;
@@ -49,22 +50,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*str;
-	char	*ptr;
-
-	str = "Hello Worlds";
-	ptr = ft_substr(str, 2, 0);
-	if (*ptr == '\0')
-		printf("NULL TERM");
-	else
-		printf("%s\n", ptr);
-	str = NULL;
-	return (0);
-}
-*/
