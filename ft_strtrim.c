@@ -6,13 +6,13 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 17:29:31 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/24 18:03:32 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 11:20:46 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*empty_str(void)
+static char	*empty_str(void)
 {
 	char	*ptr;
 
@@ -23,7 +23,7 @@ char	*empty_str(void)
 	return (ptr);
 }
 
-size_t	calc_start(char const *s1, char const *set)
+static size_t	calc_start(char const *s1, char const *set)
 {
 	size_t	start;
 
@@ -33,7 +33,7 @@ size_t	calc_start(char const *s1, char const *set)
 	return (start);
 }
 
-size_t	calc_end(char const *s1, char const *set, size_t start)
+static size_t	calc_end(char const *s1, char const *set, size_t start)
 {
 	size_t	end;
 
@@ -51,7 +51,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 	char	*ptr;
 
-    start = calc_start(s1, set);
+	start = calc_start(s1, set);
 	if (s1[start] == '\0')
 		return (empty_str());
 	end = calc_end(s1, set, start);
@@ -71,11 +71,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 /*
 #include <stdio.h>
+
 int	main(void)
 {
-	char *s1 = "xxxhellocxxs";
-	char *set = "xs";
-	char *p;
+	char	*s1;
+	char	*set;
+	char	*p;
+
+	s1 = "xxxhellocxxs";
+	set = "xs";
 	p = ft_strtrim(s1, set);
 	printf("%s\n", p);
 	free(p);
