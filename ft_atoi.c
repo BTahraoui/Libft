@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:24:01 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/27 15:05:04 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:13:37 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *nptr)
 	result = 0;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		result = result * 10 + nptr[i];
+		result = result * 10 + nptr[i] - '0';
 		i++;
 	}
 	return (result * sign);
