@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:50:14 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:42:26 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:02:34 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,23 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-
-int	main(int argc, char const *argv[])
-{
-	const char	*largestring = "Foo Bar Baz";
-	const char	*smallstring = "Ba";
-	char		*ptr;
-
-	(void)argv;
-	(void)argc;
-	ptr = ft_strnstr(largestring, smallstring, 6);
-	if (ptr == NULL)
-		printf("Not found\n");
-	else
-		printf("%s\n", ptr);
-	return (0);
-}
-*/

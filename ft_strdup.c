@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 21:34:18 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:08:46 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:03:35 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,19 +33,3 @@ char	*ft_strdup(const char *s)
 	copy[i] = '\0';
 	return (copy);
 }
-/*#include <stdio.h>
-int	main(int argc, char const *argv[])
-{
-	char	*ori;
-	char	*copy;
-
-	(void)argc;
-	(void)argv;
-	ori = "hello darkness my old freind";
-	copy = ft_strdup(ori);
-	printf("%s. \n", copy);
-	free(copy);
-	copy = NULL;
-	return (0);
-}
-*/

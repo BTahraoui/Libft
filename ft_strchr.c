@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:58:23 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:08:43 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:03:30 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,21 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-/*
-#include "libft.h"
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*s;
-	char	*result;
-
-	s = "babobo";
-	result = ft_strchr(s, '\0');
-	if (result != NULL)
-		printf("found it \n");
-	else
-		printf("Not Found!\n");
-	return (0);
-}*/

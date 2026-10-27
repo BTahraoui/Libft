@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 12:23:28 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:44:06 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:02:29 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*#include <stdio.h>
-int	main(void)
-{
-	char	*s;
-	char	*result;
-
-	s = "babobx";
-	result = ft_strrchr(s, 'o');
-	if (result != NULL)
-		printf("%s \n", result);
-	else
-		printf("Not Found!\n");
-	return (0);
-}
-*/

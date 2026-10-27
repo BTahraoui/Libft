@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:03:19 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:08:48 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:03:46 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-/*#include <stdio.h>
-
-int	main(int argc, char const *argv[])
-{
-	char	src[100] = "hello";
-	char	dst[100] = "world";
-
-	(void)argv;
-	(void)argc;
-	ft_strlcat(dst, src, sizeof(dst) - ft_strlen(dst) - 1);
-	printf("%s\n", dst);  // call once
-	return (0);
-}*/

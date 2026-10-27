@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 17:29:31 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/27 11:20:46 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:02:42 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,21 +69,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*s1;
-	char	*set;
-	char	*p;
-
-	s1 = "xxxhellocxxs";
-	set = "xs";
-	p = ft_strtrim(s1, set);
-	printf("%s\n", p);
-	free(p);
-	p = NULL;
-	return (0);
-}
-*/

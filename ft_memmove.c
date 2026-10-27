@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:21:35 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/22 11:44:35 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:03:21 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,20 +28,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(d, s, n);
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(int argc, char const *argv[])
-{
-	char	str1[10] = "hello";
-
-	(void)argc;
-	(void)argv;
-	//char str2[5] = "hi";
-	ft_memmove(str1, str1, 1);
-	printf("%s \n", str1);
-	return (0);
-}
-*/
