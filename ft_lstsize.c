@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 11:05:59 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/30 11:18:49 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/30 22:51:45 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ unsigned int	ft_lstsize(t_list *lst)
 
 	current = lst;
 	i = 0;
-	while (current != NULL)
+	while (!current)
 	{
 		current = current->next;
 		i++;
