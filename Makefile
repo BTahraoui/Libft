@@ -36,9 +36,12 @@ ft_lstnew.o \
 ft_lstadd_front.o \
 ft_lstsize.o \
 ft_lstadd_back.o \
+ft_lstdelone.o \
+ft_lstclear.o \
+ft_lstiter.o \
+
 
 all : $(NAME)
-
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 %.o : %.c
