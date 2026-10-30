@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 15:48:15 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/30 11:33:32 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/10/30 11:43:36 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_lstadd_front(t_list **lst, t_list *new);
+void 				ft_lstadd_back(t_list **lst, t_list *new);
 
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);

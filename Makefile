@@ -35,6 +35,7 @@ ft_putendl_fd.o \
 ft_lstnew.o \
 ft_lstadd_front.o \
 ft_lstsize.o \
+ft_lstadd_back.o \
 
 all : $(NAME)
 
