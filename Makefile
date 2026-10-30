@@ -32,6 +32,9 @@ ft_striteri.o \
 ft_putchar_fd.o \
 ft_putstr_fd.o \
 ft_putendl_fd.o \
+ft_lstnew.o \
+ft_lstadd_front.o \
+ft_lstsize.o \
 
 all : $(NAME)
 
