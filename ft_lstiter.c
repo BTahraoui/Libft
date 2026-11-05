@@ -22,20 +22,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-/*
-#include <stdio.h>
-
-void	ft_print(void *content)
-{
-		printf("%s\n", (char *)content);
-}
-int main (void)
-{
-	t_list	*head;
-
-	head = ft_lstnew(ft_strdup("hello"));
-	head -> next = ft_lstnew(ft_strdup("alo"));
-	ft_lstiter(head, &ft_print);
-	return (0);
-}
-*/

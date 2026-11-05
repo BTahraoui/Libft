@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:33:10 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/30 11:32:58 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/11/05 11:29:13 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (nbr >= 10)
 		ft_putnbr_fd(nbr / 10, fd);
-	ft_putchar_fd(nbr % 10 + '0', fd);
+	ft_putchar_fd((nbr % 10) + '0', fd);
 }

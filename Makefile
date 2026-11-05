@@ -39,7 +39,9 @@ ft_lstadd_back.o \
 ft_lstdelone.o \
 ft_lstclear.o \
 ft_lstiter.o \
-
+ft_lstmap.o \
+ft_putnbr_fd.o \
+ft_lstlast.o \
 
 all : $(NAME)
 $(NAME) : $(OBJS)
