@@ -113,7 +113,7 @@ Include the header in your source file:
 Compile your program by linking the library:
 
 ```bash
-cc main.c -L. -lft -I. -o program
+cc main.c libft.a -o program
 ```
 
 Run it:
