@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/11/09 15:24:59 by batahrao          #+#    #+#              #
+#    Updated: 2026/11/11 18:43:50 by batahrao         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 OBJS = ft_isalpha.o \
 ft_isdigit.o \
@@ -46,7 +58,7 @@ ft_lstlast.o \
 all : $(NAME)
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-%.o : %.c
+%.o : %.c libft.h
 	@cc -Wall -Wextra -Werror -c $< -o $@
 
 clean :

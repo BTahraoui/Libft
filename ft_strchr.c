@@ -6,7 +6,7 @@
 /*   By: batahrao <batahrao@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:58:23 by batahrao          #+#    #+#             */
-/*   Updated: 2026/10/27 15:03:30 by batahrao         ###   ########.fr       */
+/*   Updated: 2026/11/11 12:08:21 by batahrao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	x;
 
 	i = 0;
+	x = (unsigned char)c;
 	while (s[i])
 	{
-		if (c == s[i])
+		if ((unsigned char)s[i] == x)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (c == '\0')
+	if (x == '\0')
 		return ((char *)&s[i]);
 	return (NULL);
 }
